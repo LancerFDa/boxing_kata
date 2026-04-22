@@ -6,7 +6,11 @@ public class ScoreCard {
     private String redCorner = "";
     private String blueCorner = "";
     private String[] judgeScoreCard;
-   
+
+    public ScoreCard(String color) {
+        this.color = color;
+    }
+
     public void setRCorner(String redCorner) {
         this.redCorner = redCorner;
     }
@@ -15,10 +19,6 @@ public class ScoreCard {
         this.blueCorner = blueCorner;
     }
 
-    public ScoreCard(String color) {
-        this.color = color;
-    }
-    
     public String getRedCorner() {
         return redCorner;
     }
