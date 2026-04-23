@@ -8,6 +8,7 @@ class RegularRound implements Round {
 
     public RegularRound( String roundScore){
         this.roundScore = roundScore.replaceAll("\\s", "");
+        this.parseBoxerRoundScore();
     }
     
     public String getRoundScore() {
